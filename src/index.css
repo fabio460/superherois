@@ -51,6 +51,12 @@ nav{
 .btn_proximo,.btn_anterior{
   cursor: pointer;
 }
+.btn_anterior:hover{
+  color: orangered;
+}
+.btn_proximo:hover{
+  color: orangered;
+}
 .btn_prox_ant{
   display: flex;
   justify-content: space-around;
