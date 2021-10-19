@@ -5,9 +5,138 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:rebeccapurple;
+  color: white;
+  text-shadow: black 1px 2px 5px;
 }
+.container{
+  width: 95%;
+  margin: auto;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  align-items: center;
+  
+}
+header h1{
+  font-size: 38px;
+  color: orange;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.heroi img{
+  width: 100%;
+  height: 70%;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+  
+}
+.heroi{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 20px;
+  
+}
+section{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+nav{
+  border-right: black solid 1px;
+  
+}
+.btn_proximo,.btn_anterior{
+  cursor: pointer;
+}
+.btn_prox_ant{
+  display: flex;
+  justify-content: space-around;
+}
+.lupa{
+  width: 30px;
+  margin-left: -33px;
+  cursor: pointer;
+}
+.search input{
+  height: 34px;
+  width: 400px;
+  font-size: large;
+  border-radius: 23px;
+  padding: 0px 10px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  
+}
+.detalheContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.detalheContainer img{
+  width: 80%;
+  height: 80%;
+  margin: 30px;
+  box-shadow: black 2px 2px 5px;
+}
+.voltar{
+  cursor: pointer;
+  margin-top: 70px;
+}
+.dados div{
+    font-size: 28px;
+}
+header img{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+li{
+  cursor: pointer;
+  font-size: 20px;
+  list-style: none;
+  
+  margin-bottom: 10px;
+}
+li:hover{
+  color: orangered;
+}
+.testeoNav{
+  margin-top: 40px;
+  font-size: 24px;
+  
+}
+.textBottonNav{
+  margin: 10px;
+}
+.loading{
+  background-color: orangered;
+  width: 400px;
+}
+@media (max-width:400px) {
+  .detalheContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  header{
+    flex-direction: column;
+  }
+  .heroi{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+ 
+  nav{
+    display: none;
+  }
+  section{
+    grid-template-columns: 1fr;
+  } 
+  .voltar{
+    margin-top: 10px;
+  }
 }
